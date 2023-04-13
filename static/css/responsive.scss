@@ -1,0 +1,691 @@
+@media (max-width: 1036px) {
+  section.dashboard-content {
+    & > .row {
+      & > .col-12 {
+        &:nth-child(3) {
+          div.stats-container {
+            div.stats__wrapper {
+              div.active-savings {
+                flex-direction: column;
+                div.saving-info {
+                  margin-left: 0 !important;
+                  & > div {
+                    margin-top: 5px !important;
+                  }
+                }
+                div.img {
+                  width: 100%;
+                  margin-bottom: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .noDesktopBtn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 959px) {
+  section.dashboard-content {
+    & > .row {
+      & > .col-12 {
+        padding-right: 0 !important;
+        &.discoverCol {
+          display: none;
+        }
+        &:nth-child(3) {
+          div.stats-container {
+            div.stats__wrapper {
+              div.active-savings {
+                div.img {
+                  img {
+                    max-width: 3.5rem;
+                    max-height: 3.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .savings-type {
+        .col-md-6 {
+          padding-right: 0 !important;
+        }
+      }
+    }
+    .row.investibox-list {
+      & > .col-md-6 {
+        padding-bottom: 10px !important;
+        &:nth-child(2n - 1) {
+          padding-right: 0;
+        }
+      }
+    }
+    .loanPageRow {
+      & > .col-md-6 {
+        padding-bottom: 15px !important;
+        &:nth-child(2n - 1) {
+          padding-right: 0;
+        }
+        .loan-type {
+          box-shadow: none;
+          padding: 15px 20px;
+          &.third {
+            background-color: #dcf5dc;
+          }
+          &.fourth {
+            background-color: #f0f0f0;
+          }
+          .loan-type-content {
+            .actionWrapper {
+              .loan-type-btn {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .row__header p {
+      width: 100%;
+    }
+    & > .loanTypeRow {
+      .withdrawRow {
+        flex-direction: column-reverse;
+        .withdraw-btn {
+          width: 100%;
+        }
+      }
+    }
+    .generic__table {
+      table {
+        tbody {
+          tr {
+            &:first-child {
+              border-top: thin solid rgba(0, 0, 0, 0.12);
+            }
+            td {
+              border-right: none;
+              border-top: none !important;
+              div {
+                color: #808080;
+                font-weight: 400;
+                font-size: 1.4rem;
+              }
+              &:last-child {
+                border-right: none;
+              }
+            }
+            &:last-child {
+              td {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+      &.noAction {
+        thead tr th {
+          &:last-child {
+            text-align: left !important;
+          }
+        }
+      }
+      &.selectTable {
+        thead tr th,
+        tbody tr td {
+          &:nth-child(1) {
+            padding-right: 0;
+          }
+          &:nth-child(2) {
+            padding-left: 0;
+          }
+        }
+      }
+      .v-data-footer {
+        .v-data-footer__select {
+          font-weight: 500;
+          font-size: 1.4rem;
+          color: var(--label-third-color);
+          .v-input__control {
+            .v-input__slot {
+              &::before {
+                display: none;
+              }
+              &::after {
+                display: none;
+              }
+              .v-select__selection.v-select__selection--comma {
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: var(--label-third-color);
+              }
+              .v-input__icon {
+                i {
+                  color: var(--primary-color) !important;
+                }
+              }
+            }
+          }
+        }
+        .v-data-footer__pagination {
+          font-weight: 500;
+          font-size: 1.4rem;
+          color: var(--label-third-color);
+        }
+      }
+    }
+  }
+  .v-tabs-bar .v-tab {
+    font-size: 1.2rem !important;
+  }
+  .autobox-card-section {
+    padding-right: 0;
+  }
+  .minitab {
+    display: block;
+  }
+
+  .explor-investibox-title {
+    margin-bottom: 28px !important;
+  }
+  .explore-investibox-categories-list,
+  .investibox-tab-menu-design {
+    display: none;
+  }
+
+  div.d-flex.justify-content-between.align-items-center:has(
+      ul.explore-investibox-categories-list
+    ) {
+    justify-content: flex-start !important;
+    grid-gap: 15px;
+    & > div {
+      max-width: 100% !important;
+    }
+  }
+  .leftSideCol {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    grid-gap: 14px !important;
+    .searchInput__wrapper {
+      display: flex;
+      grid-gap: 27px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      input {
+        width: 100%;
+        height: 4.4rem;
+        min-width: max-content !important;
+      }
+    }
+  }
+  .fileUpload__container {
+    & > .col-12 {
+      padding: 0 0 24px;
+      &:first-child {
+        padding-right: 0;
+      }
+      &:nth-child(2) {
+        padding-left: 0 !important;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .table-container {
+    .records-table {
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid var(--gray);
+            &:first-child {
+              border-top: 2px solid var(--gray);
+            }
+            td {
+              padding: 1rem;
+              padding-left: 14px !important;
+              font-weight: 400;
+              font-size: 1.4rem;
+              color: #000831;
+              div.v-data-table__mobile-row__header {
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: #808080;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .adminName span {
+    display: none;
+  }
+  ul.menu-list {
+    padding: 30px 15px 20px !important;
+    li {
+      & > div {
+        & > div {
+          grid-gap: 4px;
+        }
+        span {
+          font-size: 1.8rem !important;
+          font-weight: 700 !important;
+        }
+        .Btn:hover {
+          svg {
+            path {
+              stroke: #ff0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-title,
+  .row__header {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  section.dashboard-content {
+    & > .row {
+      &.singleSavingRow {
+        padding: 0 12px !important;
+      }
+      & > .col-12 {
+        padding-right: 0 !important;
+      }
+    }
+  }
+  .autobox-card {
+    padding: 23px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .autobox-card-title {
+    font-size: 1.4rem !important;
+  }
+
+  .autobox-card-amount h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .autobox-card-amount p {
+    font-size: 1.2rem !important;
+  }
+
+  .autobox-card-payment-info p {
+    font-size: 14px !important;
+  }
+
+  .autobox-card-payment-info p {
+    font-size: 14px !important;
+  }
+
+  .autobox-card-payment-info img {
+    width: 9px !important;
+    height: 4.5px !important;
+  }
+
+  .autobox-card-accrued-interest {
+    font-size: 14px !important;
+  }
+
+  .autobox-card-accrued-interest-text {
+    font-size: 12px !important;
+  }
+
+  .autobox-card-next-payment small {
+    font-size: 14px !important;
+  }
+
+  .autobox-card-next-payment p {
+    font-size: 12px !important;
+  }
+
+  .simple-card-progress {
+    .text-left,
+    .text-right {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  section.dashboard-title {
+    padding: 20px 12px 0 !important;
+  }
+  section.dashboard-content {
+    & > .row {
+      padding: 0 0 !important;
+      //   border-radius: 0 !important;
+      &.content_row {
+        margin: 0 0 !important;
+        padding-bottom: 20px !important;
+      }
+      &.loanTypeRow {
+        margin: 0 !important;
+        padding: 20px 12px !important;
+      }
+      &.singleSavingRow {
+        margin: 0 !important;
+        padding-bottom: 20px !important;
+      }
+      &.dashboardRow {
+        & > .col-12 {
+          & > div {
+            padding: 18px 12px !important;
+          }
+        }
+      }
+      & > .col-12 {
+        &.balanceHead {
+          padding: 0 12px !important;
+          & > div {
+            padding: 18px 0 0 !important;
+          }
+        }
+        &:nth-child(1) {
+          div.wallet-container {
+            div.wallet-amount {
+              .wallet-title {
+                font-size: 1.4rem;
+              }
+
+              p {
+                font-size: 2.4rem;
+              }
+            }
+            div.wallet-id {
+              margin-bottom: 24px;
+              margin-top: 18px;
+              .user-id {
+                font-size: 1.4rem;
+
+                span {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+            div.wallet-actions {
+              flex-wrap: wrap;
+              row-gap: 23px;
+              .Btn {
+                width: calc(50% - 7.5px);
+                &.fund_wallet {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          div.stats-container {
+            h2 {
+              font-size: 1.6rem;
+            }
+            div.stats__wrapper {
+              div.active-savings {
+                div.img {
+                  img {
+                    max-width: 2rem;
+                    max-height: 2rem;
+                  }
+                }
+                div.saving-info {
+                  h4 {
+                    font-size: 1rem;
+                  }
+                  .number {
+                    font-size: 1.8rem;
+                  }
+                  button {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+            div.referral {
+              h2 {
+                font-size: 1.8rem;
+                color: var(--black2);
+                margin-bottom: 0;
+              }
+              p {
+                font-size: 1.2rem;
+                font-weight: 400;
+              }
+              a {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+        div.wallet-amount {
+          .wallet-title {
+            font-size: 1.4rem;
+          }
+          p {
+            font-size: 2.4rem;
+          }
+        }
+      }
+      .savings-type {
+        .col-md-6 {
+          padding-left: 0 !important;
+          p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+          .saving-type {
+            h3 {
+              font-size: 1.8rem;
+            }
+          }
+          .savings-type-left-btn {
+            font-size: 1.4rem;
+          }
+          .savings-type-right-btn {
+            font-size: 1.2rem !important;
+            width: 10rem;
+            height: 3.6rem;
+            padding-top: 8px;
+          }
+        }
+      }
+      .createBtnwrapper {
+        .create-savings-btn {
+          max-width: 100%;
+          margin-bottom: 14px;
+        }
+      }
+      .invoice-card {
+        padding: 20px 12px;
+        margin-top: 12px;
+      }
+      .savings-content-title {
+        padding-left: 12px;
+      }
+    }
+    & > .content__wrapperBox {
+      margin: 0 !important;
+      padding: 30px 12px !important;
+      .explor-investibox-title {
+        div.wallet-amount {
+          .wallet-title {
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-size: 2.4rem;
+          }
+        }
+        div.wallet-id {
+          margin-bottom: 24px;
+          margin-top: 18px;
+          .user-id {
+            font-size: 1.4rem;
+
+            span {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        div.wallet-actions {
+          flex-wrap: wrap;
+          row-gap: 23px;
+          .Btn {
+            width: calc(50% - 7.5px);
+            &.fund_wallet {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &:has(.settingTYpe1) {
+        padding: 30px 0 !important;
+        & > .col-md-12 {
+          padding: 0 12px !important;
+          h2.settingHeader {
+            font-size: 2rem;
+          }
+          div.dp-container {
+            .profile-name {
+              font-size: 2rem;
+            }
+            img {
+              max-width: 88px;
+              max-height: 88px;
+            }
+          }
+          .account-options {
+            h3 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    .investibox-info-holder {
+      margin-left: 15px;
+      .row {
+        .col-sm-4 {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+    .investibox-info-header {
+      margin-bottom: 0;
+      h1 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .investibox-stat-item {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+    .investibox-status {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  div.input-group:has(label.input-group-text.input-design) {
+    input,
+    label {
+      background-color: #faf2f2 !important;
+    }
+  }
+  .jolly__holder {
+    width: 9rem !important;
+    height: 100% !important;
+    min-height: 9rem !important;
+  }
+
+  .jolli-card {
+    div.key {
+      h3 {
+        font-size: 1.2rem !important;
+        & + span {
+          font-size: 0.8rem !important;
+        }
+      }
+      p {
+        font-size: 1rem !important;
+        & + span {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+    div.value {
+      h3 {
+        font-size: 1.2rem !important;
+        & + span {
+          font-size: 0.8rem !important;
+        }
+      }
+      p {
+        font-size: 1rem !important;
+        & + span {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
+  .filter-btn {
+    button.export {
+      min-width: 100% !important;
+      justify-content: center !important;
+      grid-gap: 17px;
+      margin-top: 11px;
+    }
+  }
+  .fileUpload__container {
+    min-height: 19.2rem;
+    .fileUpload__wrapper {
+      h3.fileUpload__wrapper-header {
+        font-size: 1.4rem;
+      }
+      div.fileUpload__wrapper-uploadArea {
+        min-height: 11.7rem;
+        p.uploadArea__text {
+          // width: 85%;
+          font-size: 1.2rem;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+        svg {
+          width: 33px;
+          height: 33px;
+        }
+      }
+    }
+  }
+}

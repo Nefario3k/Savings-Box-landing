@@ -1,0 +1,27 @@
+    /* button for landing (l) page  */
+    button.l-btn {
+        padding: 1rem 2.3rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 1rem;
+        transition: all .5s;
+        color: white;
+        background-color: var(--primary-color);
+    }
+
+    button.l-btn:hover {
+        background-color: #2755dd;
+    }
+
+    button.l-btn-outline {
+        padding: 1rem 2.3rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 1rem;
+        transition: all .5s;
+        border: 1px solid #999C9F;
+    }
+
+    button.l-btn-outline:hover {
+        background-color: #e5e5e5;
+    }

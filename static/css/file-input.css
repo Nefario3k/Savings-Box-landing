@@ -1,0 +1,78 @@
+label.input-group-text.input-design {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: .7rem;
+    padding-left: 26px;
+}
+
+input[type='file'] {
+    border: 1px dashed #999C9F;
+    /* border-left: none; */
+    background-color: rgba(0, 0, 0, 0.02);
+    ;
+    color: #999C9F;
+    padding: .6rem;
+    border-radius: var(--normal-radius);
+    font-size: 1.6rem;
+}
+
+input::file-selector-button {
+    visibility: hidden;
+}
+
+/* Chrome, Edge & Safari */
+input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type='file']::before {
+    content: "Upload file";
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px 8px;
+    cursor: pointer;
+    color: black;
+}
+
+div.input-group:has(input:focus) label.input-group-text.input-design {
+    border: 1.5px solid var(--primary-color);
+    border-right: none !important;
+}
+
+div.input-group:has(input:focus) label.input-group-text.input-design.secondLabel {
+    border: 1.5px solid var(--primary-color);
+    border-right: 1.5px solid var(--primary-color) !important;
+}
+
+div.input-group:has(input:focus) label.input-group-text.input-design svg path {
+    fill: var(--primary-color);
+    fill-opacity: 1;
+}
+
+div.input-group:has(input:focus) input {
+    outline: none !important;
+    border: 1.5px solid var(--primary-color) !important;
+    border-left: none !important;
+    box-shadow: none;
+}
+
+div.input-group:has(input:focus) input.lefting {
+    border-left: 1.5px solid var(--primary-color) !important;
+}
+
+div.input-group:has(input:focus):has(label.input-group-text.input-design.secondLabel) label.input-group-text.input-design.secondLabel {
+    border-left: none !important;
+}
+
+div.input-group:has(input:focus):has(label.input-group-text.input-design.secondLabel) input {
+    border-right: none !important;
+}
+
+
+div.input-group:has(input.singleInput) label {
+    border: 1px dashed #999C9F;
+    border-right: none;
+}
+
+div.input-group:has(input.singleInput) input {
+    border-left: none;
+}

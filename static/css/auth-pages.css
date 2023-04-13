@@ -1,0 +1,145 @@
+/* reg page frame */
+
+.auth-page-container {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.auth-page-left-side {
+    position: fixed;
+    width: 626px;
+    height: 100%;
+    padding: 0px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: orange;
+}
+
+.auth-page-left-side-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #00000082;
+}
+
+.auth-page-right-side {
+    margin-left: 628px;
+    padding: 110px 129px;
+    max-width: 1000px;
+}
+
+.auth-page-header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35.13px;
+    text-align: left;
+    color: rgba(65, 105, 225, 1);
+}
+
+.auth-page-header p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35.13px;
+    color: #000831;
+}
+
+.auth-form {
+    margin-top: 35px;
+}
+
+.footer p {
+    font-family: Sofia Pro;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14.5px;
+    text-align: center;
+}
+
+.footer p a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(72, 95, 214, 1) !important;
+    font-size: 14px;
+}
+
+@media all and (max-width: 1439px) {
+    .auth-page-left-side {
+        width: 600px;
+    }
+    .auth-page-right-side {
+        margin-left: 600px;
+        padding: 100px 119px;
+    }
+}
+
+@media all and (max-width: 1251px) {
+    .auth-page-left-side {
+        width: 500px;
+    }
+    .auth-page-right-side {
+        margin-left: 500px;
+        padding: 80px 99px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .auth-page-left-side {
+        display: none;
+    }
+    .auth-page-right-side {
+        margin-left: 0px;
+        padding: 80px 99px;
+    }
+}
+
+@media all and (max-width: 625px) {
+    .auth-page-right-side {
+        margin-left: 0px;
+        padding: 30px;
+    }
+}
+
+
+/* token switcher section */
+
+.switch-token-method {
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+
+.switch-token-method p {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(62, 62, 62, 1);
+}
+
+.switch-token-method a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(90, 117, 255, 1);
+}
+
+
+/* resend tokeb section */
+
+.resend-token-container {
+    padding-top: 10px;
+}
+
+.resend-token-container span {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(62, 62, 62, 1);
+}
+
+.resend-token-container a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(90, 117, 255, 1);
+}

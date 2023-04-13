@@ -1,0 +1,133 @@
+/* general */
+
+.savings-content-title {
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(153, 156, 159, 1);
+    margin-bottom: 19px;
+    padding: 0;
+}
+
+
+/* autobox */
+
+.autobox-card-section {
+    padding-right: 70px;
+}
+
+.v-tabs-styles {
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 234, 245, 1);
+}
+
+.v-tabs-items-styles {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 30rem;
+}
+
+/* tab */
+.v-tabs-bar .v-tab {
+    color: rgba(102, 107, 112, 1);
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-transform: capitalize;
+    margin: 3px;
+    margin-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.v-tabs-bar .v-tab::before {
+    display: none;
+}
+
+.v-tab--active {
+    background-color: #ffffff;
+    color: rgba(65, 105, 225, 1) !important;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+
+.v-tabs-styles .v-tabs-slider-wrapper {
+    display: none;
+}
+
+.autobox-summary-box {
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.summary-item {
+    margin-bottom: 15px;
+}
+
+.summary-item h4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(102, 107, 112, 1);
+}
+
+.summary-item p {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 8, 16, 1);
+}
+
+@media screen and (max-width: 800px) {
+    .savings-content-title {
+        font-weight: 600;
+        font-size: 18px;
+        color: rgba(153, 156, 159, 1);
+        margin-bottom: 0;
+    }
+
+    .savings-type .saving-type {
+        padding: 13px 20px !important;
+    }
+
+
+
+    /* autobox */
+
+    .autobox-card-section {
+        padding-right: 0rem;
+    }
+
+    .v-tabs-styles {
+        border-radius: 8px;
+        height: 50px;
+        margin-bottom: 20px;
+        background-color: rgba(255, 234, 245, 1);
+    }
+
+    .v-tabs-items-styles {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .autobox-summary-box {
+        border: 1px solid #E7E7E7;
+        border-radius: 8px;
+        padding: 30px;
+    }
+
+    .summary-item {
+        margin-bottom: 15px;
+    }
+
+    .summary-item h4 {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(102, 107, 112, 1);
+    }
+
+    .summary-item p {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 8, 16, 1);
+    }
+}
